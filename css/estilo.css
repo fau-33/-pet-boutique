@@ -146,3 +146,39 @@ h3 {
   margin: 0 15px;
 }
 /* Fim CSS Marcas */
+/* Início CSS Onde estamos */
+.onde-estamos {
+  text-align: center;
+}
+
+.onde-estamos p {
+  color: #3c184e;
+  font-size: 20px;
+  margin: 0 0 45px;
+}
+
+.onde-estamos iframe {
+  width: 800px;
+  height: 450px;
+}
+/* Fim CSS Onde estamos */
+/* Início CSS Rodapé */
+.rodape {
+  background-color: #3c184e;
+  padding: 15px 0;
+}
+
+.text-rodape {
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+.text-rodape a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 12px;
+}
+/* Fim CSS Rodapé */
