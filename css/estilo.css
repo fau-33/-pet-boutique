@@ -109,3 +109,26 @@ h3 {
   border-radius: 5px;
 }
 /* Fim CSS Nossos Serviços */
+
+/* Início CSS Faixa */
+.faixa {
+  background-color: #3c184e;
+  text-align: center;
+}
+
+.text-faixa {
+  max-width: 800px;
+  font-size: 40px;
+  color: #fff;
+  margin: 0 auto 50px;
+}
+
+.redes-sociais a {
+  margin: 0 20px;
+}
+
+.redes-sociais img {
+  width: 50px;
+  height: 50px;
+}
+/* Fim CSS Faixa */
