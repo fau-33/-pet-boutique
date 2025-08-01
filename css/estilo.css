@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.container {
+  padding: 120px 80px;
+}
+
+.destaque {
+  font-weight: 700;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 36px;
+  color: #3c184e;
+  text-align: center;
+  margin: 0 0 45px;
+}
+
+/* Início CSS Banner */
+.banner-topo {
+  background-image: url("../img/banner-topo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.container-nome-logo {
+  max-width: 250px;
+  color: #3c184e;
+}
+
+.container-nome-logo img {
+  width: 30px;
+  margin-right: 5px;
+}
+
+.container-nome-logo .nome-pet-shop {
+  font-size: 35px;
+  margin: 0 0 5px 0;
+}
+
+.container-nome-logo .slogan-pet-shop {
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+.container-titulo-topo {
+  max-width: 1024px;
+  border-radius: 10px;
+  padding: 40px;
+  margin: 70px auto 0;
+  background: #ffffffc4;
+  box-shadow: 0 8px 32px #1f26875e;
+}
+
+.titulo-topo {
+  font-size: 60px;
+  color: #3c184e;
+  text-align: center;
+  font-weight: 800;
+  margin: 0 0 40px;
+}
+
+.link-fale-conosco {
+  text-align: center;
+  width: 200px;
+  padding: 10px 25px;
+  font-size: 20px;
+  background-color: #3c184e;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.link-fale-conosco a {
+  color: #fff;
+}
+
+.container-titulo-topo img {
+  width: 20px;
+}
+/* Fim CSS Banner */
