@@ -85,3 +85,27 @@ h3 {
   width: 20px;
 }
 /* Fim CSS Banner */
+
+/* Início CSS Nossos Serviços */
+.box-servicos {
+  max-width: 800px;
+  color: #3c184e;
+  margin: 0 auto 50px;
+}
+
+.box-servicos li {
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+
+.box-servicos-img {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.box-servicos-img img {
+  box-shadow: 3px 6px 10px 6px #0000005c;
+  border-radius: 5px;
+}
+/* Fim CSS Nossos Serviços */
