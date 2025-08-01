@@ -132,3 +132,17 @@ h3 {
   height: 50px;
 }
 /* Fim CSS Faixa */
+
+/* Início CSS Marcas */
+.container-marcas {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo-marca {
+  width: 148px;
+  height: 148px;
+  margin: 0 15px;
+}
+/* Fim CSS Marcas */
