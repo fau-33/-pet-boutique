@@ -1,13 +1,46 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+}
+
+:root {
+  --primary: #3c184e;
+  --text-dark: #3c184e;
+  --text-light: #fff;
+  --bg-light: #f8f5fb;
+  --shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
   text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding-left: 1.2rem;
 }
 
 .container {
-  padding: 120px 80px;
+  width: min(1200px, calc(100% - 2.5rem));
+  margin: 0 auto;
+  padding: clamp(60px, 8vw, 120px) 0;
 }
 
 .destaque {
@@ -16,134 +49,222 @@
 }
 
 h3 {
-  font-size: 36px;
-  color: #3c184e;
+  font-size: clamp(26px, 4vw, 36px);
+  color: var(--primary);
   text-align: center;
   margin: 0 0 45px;
 }
 
 /* Início CSS Banner */
 .banner-topo {
-  background-image: url("../img/banner-topo.jpg");
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(60, 24, 78, 0.4),
+      rgba(60, 24, 78, 0.4)
+    ),
+    url("../img/banner-topo.jpg");
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding-top: clamp(80px, 12vh, 160px);
+  padding-bottom: clamp(80px, 12vh, 160px);
+}
+
+@supports (background-image: image-set(url("") type("image/webp"))) {
+  .banner-topo {
+    background-image: linear-gradient(
+        rgba(60, 24, 78, 0.4),
+        rgba(60, 24, 78, 0.4)
+      ),
+      image-set(
+        url("../img/banner-topo.webp") type("image/webp"),
+        url("../img/banner-topo.jpg") type("image/jpeg")
+      );
+  }
 }
 
 .container-nome-logo {
-  max-width: 250px;
-  color: #3c184e;
+  max-width: 320px;
+  color: var(--text-light);
+  text-align: center;
 }
 
 .container-nome-logo img {
-  width: 30px;
-  margin-right: 5px;
+  width: 55px;
+  margin: 0 auto 10px;
 }
 
 .container-nome-logo .nome-pet-shop {
-  font-size: 35px;
-  margin: 0 0 5px 0;
+  font-size: clamp(32px, 6vw, 48px);
+  letter-spacing: 1px;
+  margin-bottom: 8px;
 }
 
 .container-nome-logo .slogan-pet-shop {
-  font-size: 14px;
-  text-align: center;
+  font-size: clamp(14px, 2.5vw, 16px);
   margin: 0;
 }
 
 .container-titulo-topo {
-  max-width: 1024px;
-  border-radius: 10px;
-  padding: 40px;
-  margin: 70px auto 0;
-  background: #ffffffc4;
-  box-shadow: 0 8px 32px #1f26875e;
+  width: min(960px, 100% - 2rem);
+  border-radius: 16px;
+  padding: clamp(32px, 6vw, 56px);
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(6px);
 }
 
 .titulo-topo {
-  font-size: 60px;
-  color: #3c184e;
+  font-size: clamp(32px, 6vw, 60px);
+  color: var(--primary);
   text-align: center;
   font-weight: 800;
-  margin: 0 0 40px;
+  margin: 0 0 32px;
+}
+
+.link-fale-conosco-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .link-fale-conosco {
-  text-align: center;
-  width: 200px;
-  padding: 10px 25px;
-  font-size: 20px;
-  background-color: #3c184e;
-  border-radius: 10px;
-  margin: 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--primary);
+  border-radius: 999px;
+  color: var(--text-light);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid transparent;
 }
 
-.link-fale-conosco a {
-  color: #fff;
+.link-fale-conosco:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(60, 24, 78, 0.35);
+  border-color: rgba(255, 255, 255, 0.4);
+  background: linear-gradient(135deg, #3c184e, #5a2480);
 }
 
 .container-titulo-topo img {
-  width: 20px;
+  width: 22px;
+  filter: invert(1);
 }
 /* Fim CSS Banner */
 
 /* Início CSS Nossos Serviços */
 .box-servicos {
-  max-width: 800px;
-  color: #3c184e;
+  max-width: 900px;
+  color: var(--text-dark);
   margin: 0 auto 50px;
 }
 
 .box-servicos li {
-  font-size: 20px;
+  font-size: clamp(18px, 2.2vw, 20px);
   margin: 0 0 20px;
+  position: relative;
+  padding-left: 16px;
+}
+
+.box-servicos li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-size: 24px;
+  line-height: 1;
 }
 
 .box-servicos-img {
-  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
   margin: 0 auto;
-  text-align: center;
+}
+
+.box-servicos-img picture {
+  width: 100%;
+  display: block;
 }
 
 .box-servicos-img img {
-  box-shadow: 3px 6px 10px 6px #0000005c;
-  border-radius: 5px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 /* Fim CSS Nossos Serviços */
 
 /* Início CSS Faixa */
 .faixa {
-  background-color: #3c184e;
+  background-color: var(--primary);
   text-align: center;
 }
 
 .text-faixa {
-  max-width: 800px;
-  font-size: 40px;
-  color: #fff;
-  margin: 0 auto 50px;
+  max-width: 900px;
+  font-size: clamp(22px, 4vw, 40px);
+  color: var(--text-light);
+  margin: 0 auto 40px;
 }
 
-.redes-sociais a {
-  margin: 0 20px;
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(16px, 3vw, 32px);
+  flex-wrap: wrap;
+}
+
+.redes-sociais picture {
+  display: flex;
 }
 
 .redes-sociais img {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
+  transition: transform 0.2s ease;
+}
+
+.redes-sociais img:hover {
+  transform: scale(1.08);
 }
 /* Fim CSS Faixa */
 
 /* Início CSS Marcas */
 .container-marcas {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+  width: min(1000px, 100%);
+  margin: 0 auto 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  align-items: center;
+}
+
+.container-marcas picture {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .logo-marca {
-  width: 148px;
-  height: 148px;
-  margin: 0 15px;
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  margin: 0 auto;
+  filter: grayscale(0.2);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.logo-marca:hover {
+  transform: translateY(-4px);
+  filter: grayscale(0);
 }
 /* Fim CSS Marcas */
 /* Início CSS Onde estamos */
@@ -152,33 +273,106 @@ h3 {
 }
 
 .onde-estamos p {
-  color: #3c184e;
-  font-size: 20px;
-  margin: 0 0 45px;
+  color: var(--text-dark);
+  font-size: clamp(18px, 2.5vw, 20px);
+  margin: 0 0 35px;
 }
 
 .onde-estamos iframe {
-  width: 800px;
-  height: 450px;
+  width: min(100%, 900px);
+  height: clamp(320px, 40vw, 450px);
+  border-radius: 16px;
+  border: 0;
+  box-shadow: var(--shadow);
 }
 /* Fim CSS Onde estamos */
 /* Início CSS Rodapé */
 .rodape {
-  background-color: #3c184e;
-  padding: 15px 0;
+  background-color: var(--primary);
+  padding: 20px 0;
 }
 
 .text-rodape {
-  font-size: 12px;
+  font-size: 13px;
   text-align: center;
-  color: #fff;
+  color: var(--text-light);
 }
 
 .text-rodape a {
-  color: #fff;
-  text-decoration: none;
+  color: var(--text-light);
   font-weight: 700;
   font-style: italic;
-  font-size: 12px;
+  font-size: 13px;
 }
 /* Fim CSS Rodapé */
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .container {
+    width: min(100%, calc(100% - 2rem));
+    padding: clamp(40px, 8vw, 80px) 0;
+  }
+
+  .container-titulo-topo {
+    width: min(720px, 100% - 1rem);
+  }
+
+  .box-servicos-img {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-topo {
+    padding-inline: 1.5rem;
+  }
+
+  .container-titulo-topo {
+    padding: 32px 24px;
+  }
+
+  .link-fale-conosco {
+    width: 100%;
+  }
+
+  .box-servicos {
+    text-align: left;
+  }
+
+  .text-faixa {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: calc(100% - 1.5rem);
+    padding: 48px 0;
+  }
+
+  .banner-topo {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .box-servicos-img {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .logo-marca {
+    max-width: 120px;
+  }
+
+  .redes-sociais img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .onde-estamos iframe {
+    height: 320px;
+  }
+
+  .rodape {
+    padding: 16px 0;
+  }
+}

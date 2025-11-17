@@ -1,0 +1,26 @@
+{
+  "name": "pet-boutique",
+  "version": "1.0.0",
+  "description": "O **Pet Boutique** é um site desenvolvido em HTML e CSS, focado em oferecer serviços de alta qualidade para cães e gatos. O projeto foi criado com o objetivo de proporcionar uma experiência visual agradável e intuitiva aos usuários, destacando os serviços oferecidos pela empresa e promovendo sua marca.",
+  "main": "index.js",
+  "scripts": {
+    "convert:webp": "node scripts/convert-webp.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fau-33/-pet-boutique.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fau-33/-pet-boutique/issues"
+  },
+  "homepage": "https://github.com/fau-33/-pet-boutique#readme",
+  "dependencies": {
+    "glob": "^11.1.0",
+    "sharp": "^0.34.5"
+  }
+}

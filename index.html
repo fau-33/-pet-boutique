@@ -11,7 +11,10 @@
     <div class="container banner-topo">
       <div class="container-nome-logo">
         <p class="nome-pet-shop">
-          <img src="./img/patas.png" alt="Logo da Pet Boutique" />
+          <picture>
+            <source srcset="./img/patas.webp" type="image/webp" />
+            <img src="./img/patas.png" alt="Logo da Pet Boutique" />
+          </picture>
         </p>
         <p class="slogan-pet-shop">Estilo e Elegância para Cães e Gatos</p>
       </div>
@@ -19,13 +22,22 @@
         <h1 class="titulo-topo">
           Tenha o melhor tratamento para o seu parceiro
         </h1>
-        <p class="link-fale-conosco">
-          <a href="https://wa.me/5521999999999/?text=Olá" target="_blank"
-            >Fale conosco
+        <p class="link-fale-conosco-wrapper">
+          <a
+            class="link-fale-conosco"
+            href="https://wa.me/5521999999999/?text=Olá"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Fale conosco
             <img
-              src="./img/redes-sociais/whatsapp-svgrepo-com.png"
-              alt="Fale conosco"
-          /></a>
+              src="./img/redes-sociais/whatsapp-svgrepo-com.webp"
+              alt="Ícone do WhatsApp"
+              width="22"
+              height="22"
+              loading="lazy"
+            />
+          </a>
         </p>
       </div>
     </div>
@@ -64,15 +76,51 @@
       </div>
 
       <div class="box-servicos-img">
-        <img src="./img/banho.png" alt="Banho e Tosa" title="Banho & Tosa" />
-        <img
-          src="./img/veterinario.png"
-          alt="Veterinários"
-          title="Veterinário 24h"
-        />
-        <img src="./img/dog-walker.png" alt="Passeio" title="Dog Walker" />
-        <img src="./img/creche.png" alt="Creche" title="Creche Pet" />
-        <img src="./img/loja.png" alt="Loja" title="Produtos para seu pet" />
+        <picture>
+          <source srcset="./img/banho.webp" type="image/webp" />
+          <img
+            src="./img/banho.png"
+            alt="Banho e Tosa"
+            title="Banho & Tosa"
+            loading="lazy"
+          />
+        </picture>
+        <picture>
+          <source srcset="./img/veterinario.webp" type="image/webp" />
+          <img
+            src="./img/veterinario.png"
+            alt="Veterinários"
+            title="Veterinário 24h"
+            loading="lazy"
+          />
+        </picture>
+        <picture>
+          <source srcset="./img/dog-walker.webp" type="image/webp" />
+          <img
+            src="./img/dog-walker.png"
+            alt="Passeio"
+            title="Dog Walker"
+            loading="lazy"
+          />
+        </picture>
+        <picture>
+          <source srcset="./img/creche.webp" type="image/webp" />
+          <img
+            src="./img/creche.png"
+            alt="Creche"
+            title="Creche Pet"
+            loading="lazy"
+          />
+        </picture>
+        <picture>
+          <source srcset="./img/loja.webp" type="image/webp" />
+          <img
+            src="./img/loja.png"
+            alt="Loja"
+            title="Produtos para seu pet"
+            loading="lazy"
+          />
+        </picture>
       </div>
     </div>
     <!-- Fim dos Serviços -->
@@ -83,21 +131,57 @@
         pelo que fazemos
       </p>
       <div class="redes-sociais">
-        <a href="https://www.facebook.com/" target="_blank"
-          ><img
-            src="./img/redes-sociais/facebook-svgrepo-com.png"
-            alt="Facebook"
-        /></a>
-        <a href="https://www.instagram.com/" target="_blank"
-          ><img
-            src="./img/redes-sociais/instagram-svgrepo-com.png"
-            alt="Instagarm"
-        /></a>
-        <a href="https://wa.me/5521999999999/?text=Olá" target="_blank"
-          ><img
-            src="./img/redes-sociais/whatsapp-svgrepo-com.png"
-            alt="Whatsapp"
-        /></a>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <picture>
+            <source
+              srcset="./img/redes-sociais/facebook-svgrepo-com.webp"
+              type="image/webp"
+            />
+            <img
+              src="./img/redes-sociais/facebook-svgrepo-com.png"
+              alt="Facebook"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <picture>
+            <source
+              srcset="./img/redes-sociais/instagram-svgrepo-com.webp"
+              type="image/webp"
+            />
+            <img
+              src="./img/redes-sociais/instagram-svgrepo-com.png"
+              alt="Instagram"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+        <a
+          href="https://wa.me/5521999999999/?text=Olá"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <picture>
+            <source
+              srcset="./img/redes-sociais/whatsapp-svgrepo-com.webp"
+              type="image/webp"
+            />
+            <img
+              src="./img/redes-sociais/whatsapp-svgrepo-com.png"
+              alt="Whatsapp"
+              loading="lazy"
+            />
+          </picture>
+        </a>
       </div>
     </div>
     <!-- Fim da Faixa -->
@@ -105,54 +189,118 @@
     <div class="container principais-marcas">
       <h3>Nossas principais marcas</h3>
       <div class="container-marcas">
-        <img src="./img/marcas/AlfaPet.png" alt="Alfa Pet" class="logo-marca" />
-        <img
-          src="./img/marcas/BichinhoChic.png"
-          alt="Bichinho Chic"
-          class="logo-marca"
-        />
-        <img
-          src="./img/marcas/Boehringer.png"
-          alt="Boehringer"
-          class="logo-marca"
-        />
-        <img src="./img/marcas/Inataa.png" alt="Inataa" class="logo-marca" />
+        <picture>
+          <source srcset="./img/marcas/AlfaPet.webp" type="image/webp" />
+          <img
+            src="./img/marcas/AlfaPet.png"
+            alt="Alfa Pet"
+            class="logo-marca"
+            loading="lazy"
+          />
+        </picture>
+        <picture>
+          <source srcset="./img/marcas/BichinhoChic.webp" type="image/webp" />
+          <img
+            src="./img/marcas/BichinhoChic.png"
+            alt="Bichinho Chic"
+            class="logo-marca"
+            loading="lazy"
+          />
+        </picture>
+        <picture>
+          <source srcset="./img/marcas/Boehringer.webp" type="image/webp" />
+          <img
+            src="./img/marcas/Boehringer.png"
+            alt="Boehringer"
+            class="logo-marca"
+            loading="lazy"
+          />
+        </picture>
+        <picture>
+          <source srcset="./img/marcas/Inataa.webp" type="image/webp" />
+          <img
+            src="./img/marcas/Inataa.png"
+            alt="Inataa"
+            class="logo-marca"
+            loading="lazy"
+          />
+        </picture>
       </div>
       <div class="container-marcas">
-        <img
-          src="./img/marcas/LogoBiofresh.png"
-          alt="Biofresh"
-          class="logo-marca"
-        />
-        <img
-          src="./img/marcas/LogoBravecto.png"
-          alt="Bravecto"
-          class="logo-marca"
-        />
-        <img
-          src="./img/marcas/NexgardSpectra.png"
-          alt="Nexgard Spectra"
-          class="logo-marca"
-        />
-        <img
-          src="./img/marcas/Pickorruchos.png"
-          alt="Pickorruchos"
-          class="logo-marca"
-        />
+        <picture>
+          <source srcset="./img/marcas/LogoBiofresh.webp" type="image/webp" />
+          <img
+            src="./img/marcas/LogoBiofresh.png"
+            alt="Biofresh"
+            class="logo-marca"
+            loading="lazy"
+          />
+        </picture>
+        <picture>
+          <source srcset="./img/marcas/LogoBravecto.webp" type="image/webp" />
+          <img
+            src="./img/marcas/LogoBravecto.png"
+            alt="Bravecto"
+            class="logo-marca"
+            loading="lazy"
+          />
+        </picture>
+        <picture>
+          <source srcset="./img/marcas/NexgardSpectra.webp" type="image/webp" />
+          <img
+            src="./img/marcas/NexgardSpectra.png"
+            alt="Nexgard Spectra"
+            class="logo-marca"
+            loading="lazy"
+          />
+        </picture>
+        <picture>
+          <source srcset="./img/marcas/Pickorruchos.webp" type="image/webp" />
+          <img
+            src="./img/marcas/Pickorruchos.png"
+            alt="Pickorruchos"
+            class="logo-marca"
+            loading="lazy"
+          />
+        </picture>
       </div>
       <div class="container-marcas">
-        <img
-          src="./img/marcas/PapaPets.png"
-          alt="Papa Pets"
-          class="logo-marca"
-        />
-        <img
-          src="./img/marcas/royalcanini.png"
-          alt="Royal Canini"
-          class="logo-marca"
-        />
-        <img src="img//marcas/saopet.png" alt="São Pet" class="logo-marca" />
-        <img src="img//marcas/exopets.png" alt="ExoPets" class="logo-marca" />
+        <picture>
+          <source srcset="./img/marcas/PapaPets.webp" type="image/webp" />
+          <img
+            src="./img/marcas/PapaPets.png"
+            alt="Papa Pets"
+            class="logo-marca"
+            loading="lazy"
+          />
+        </picture>
+        <picture>
+          <source srcset="./img/marcas/royalcanini.webp" type="image/webp" />
+          <img
+            src="./img/marcas/royalcanini.png"
+            alt="Royal Canini"
+            class="logo-marca"
+            loading="lazy"
+          />
+        </picture>
+        <picture>
+          <source srcset="./img/marcas/saopet.webp" type="image/webp" />
+          <img
+            src="./img/marcas/saopet.png"
+            alt="São Pet"
+            class="logo-marca"
+            loading="lazy"
+          />
+        </picture>
+        <picture>
+          <source srcset="./img/marcas/exopets.webp" type="image/webp" />
+          <img
+            src="./img/marcas/exopets.png"
+            alt="ExoPets"
+            class="logo-marca"
+            loading="lazy"
+          />
+        </picture>
       </div>
     </div>
     <!-- Fim das Marcas -->
@@ -164,21 +312,57 @@
       </p>
 
       <div class="redes-sociais">
-        <a href="https://www.facebook.com/" target="_blank"
-          ><img
-            src="./img/redes-sociais/facebook-svgrepo-com.png"
-            alt="Facebook"
-        /></a>
-        <a href="https://www.instagram.com/" target="_blank"
-          ><img
-            src="./img/redes-sociais/instagram-svgrepo-com.png"
-            alt="Instagarm"
-        /></a>
-        <a href="https://wa.me/5521999999999/?text=Olá" target="_blank"
-          ><img
-            src="./img/redes-sociais/whatsapp-svgrepo-com.png"
-            alt="Whatsapp"
-        /></a>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <picture>
+            <source
+              srcset="./img/redes-sociais/facebook-svgrepo-com.webp"
+              type="image/webp"
+            />
+            <img
+              src="./img/redes-sociais/facebook-svgrepo-com.png"
+              alt="Facebook"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <picture>
+            <source
+              srcset="./img/redes-sociais/instagram-svgrepo-com.webp"
+              type="image/webp"
+            />
+            <img
+              src="./img/redes-sociais/instagram-svgrepo-com.png"
+              alt="Instagram"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+        <a
+          href="https://wa.me/5521999999999/?text=Olá"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <picture>
+            <source
+              srcset="./img/redes-sociais/whatsapp-svgrepo-com.webp"
+              type="image/webp"
+            />
+            <img
+              src="./img/redes-sociais/whatsapp-svgrepo-com.png"
+              alt="Whatsapp"
+              loading="lazy"
+            />
+          </picture>
+        </a>
       </div>
     </div>
     <!-- Fim da Faixa -->
